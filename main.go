@@ -25,7 +25,7 @@ func main() {
 
 	for _, f := range fi {
 
-		stat, serr := os.Stat(filepath.Join(dir, f.Name()))
+		_, serr := os.Stat(filepath.Join(dir, f.Name()))
 		fmt.Printf("%s\t%+q\t%s\t%v\n\n", f.Name(), f.Name(), hex(f.Name()), serr == nil)
 	}
 
