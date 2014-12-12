@@ -23,7 +23,7 @@ func main() {
 	}
 
 	for _, f := range fi {
-		fmt.Printf("%s\t%+q\t%s\n", f.Name(), f.Name(), hex(f.Name()))
+		fmt.Printf("%s\t%+q\t%s\n\n", f.Name(), f.Name(), hex(f.Name()))
 	}
 
 }
